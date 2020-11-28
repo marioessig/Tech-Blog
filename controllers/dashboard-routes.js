@@ -47,7 +47,7 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
-router.get("/edit/:id", (req, res) => {
+router.get("/edit/:id", withAuth, (req, res) => {
   Post.findOne({
     where: {
       id: req.params.id,
@@ -90,7 +90,7 @@ router.get("/edit/:id", (req, res) => {
 
       res.render("edit-post", {
         post,
-        loggedIn: true,
+        loggedIn: req.session.loggedIn
       });
     })
     .catch((err) => {
