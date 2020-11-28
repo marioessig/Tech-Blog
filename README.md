@@ -94,7 +94,7 @@ WHEN I am idle on the page for more than a set time <br>
 
 **Want to install all at once?** <br>
 `npm init -y` first then enter the next code:
-`npm i mysql2 dotenv bcrypt express express-session sequelize connect-session-sequelize`
+`npm i mysql2 dotenv bcrypt express express-handlebars express-session sequelize connect-session-sequelize`
 
 Then update the **package.json** file with: `"start": "node server.js"`
 
