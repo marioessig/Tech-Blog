@@ -94,7 +94,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
       });
     })
     .catch((err) => {
-      console.log(err);
+      console.log("NOT WORKING");
       res.status(500).json(err);
     });
 });
