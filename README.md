@@ -106,9 +106,3 @@ Make sure to follow the instructions below to use the database:
 4. Seed tables with data: `npm run seed`
 5. Start the program: `node server.js`
 6. Use Insomnia Core App and "http://localhost:3001" and have fun playing around with it!
-
-
-### To perform TDD (Test-Driven Development):
-1. In the terminal in the root directory, type `npm i jest -D`
-2. Update **package.json**: `"test": "jest"`
-3. Type `npm run test`
